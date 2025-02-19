@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos Mensuales</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Gastos Mensuales</h1>
+        <form id="gastosForm">
+            <label for="year">Año:</label>
+            <select id="year" name="year">
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select>
+            
+            <label for="month">Mes:</label>
+            <select id="month" name="month">
+                <option value="Enero">Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Septiembre">Septiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Noviembre">Noviembre</option>
+                <option value="Diciembre">Diciembre</option>
+            </select>
+        
+            <label for="gastos">Gastos:</label>
+            <input type="number" id="gastos" name="gastos" required min="0" placeholder="Ingresa el monto de gastos">
+
+
+            <button type="submit">Agregar</button>
+        </form>
+        
+        <div class="chart-container">
+            <canvas id="gastosChart" width="800" height="200"></canvas> 
+        </div>
+        
+            <button type="button" id="resetButton">Reset</button>
+
+            <div class="stats-panel">
+                <h2>Estadísticas</h2>
+                <p><strong>Promedio de gastos:</strong> <span id="averagegastos">0</span></p>            </div>
+        </div>
+    
+
+    </div>
+
+    <script src="js/formHandler.js"></script>
+    <script src="js/chartManager.js"></script>
+    <script src="js/Storage.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
