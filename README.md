@@ -43,7 +43,7 @@ Este proyecto es una aplicación web que permite a los usuarios registrar, visua
 - **Chart.js** para la visualización de datos
 - **localStorage** para el almacenamiento persistente
 
-##Screenshots
+## Screenshots
 ![{0C90F855-C76F-4931-8756-0D11BA56338B}](https://github.com/user-attachments/assets/45ed6c36-1691-45ae-b9f9-f4c370d57ede)
 ![{CEACE7F6-BE38-4BEB-9C16-8C3231327B5A}](https://github.com/user-attachments/assets/5701f500-4fa2-460f-b78d-9c325c2348ca)
 
